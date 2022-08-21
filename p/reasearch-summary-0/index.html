@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='上海-杭州：从idea到第一次集体讨论 这篇文章的时间线拉得特别长，从21年的年底就和ZH师兄确定了大概的方向。实习期间抽下班时间，和上海回合肥的高铁上，断断续续地写完了开题报告。21年12月完成开题答辩之后，再到22年3月，大部分时间都花在实习的项目里。
+2月大致完成了文章setting部分的调研，4月上海疫情爆发，度过了最艰难的一段时光（不愿赘述），那段时间整个人都不太好，挂掉了很重要的面试。
+到5月终于收拾好心情，在集中隔离点码好了理论推导部分，约我的导师T老师和ZH师兄讨论了一下我们的topic是否值得往下做。T老师向来是自信的人，从他口中很少听到否定的答案。他的肯定也给了我一些动力，于是5月底到6月初，开始了一边写论文一边刷题的生活。
+USTC：陷入local optimum 排除万难地回到了学校，这时候draft里还是只有当前setting和proof的部分，而且proof里还有一些数学问题没解决，于是我拉了ZC师兄加入。
+反复讨论了很多次，这期间还去请教了同组本科数学的WJ师兄，重操旧业捡起了MATLAB，还顺便学了下Mathematica（好用，强推！）。但这样长时间的死磕公式，得到的收益往往很有限。经常一整天精疲力尽，回头一看论文进展，还是0。那段时间和ZC师兄讨论，听的最多的词就是&amp;quot;trivial&amp;quot; ———— 这是一个数学工具可解的问题。
+心情差到极点怀疑自己的时候，发现赶8月另一个A会的室友也有几乎相同的烦恼。在食堂天台一起吹吹晚风，一瓶RIO，聊聊科研和人生，成了6月为数不多的快乐回忆。
+实验：再也不敢玩火了 为了让这个问题看着不那么&amp;quot;trivial&amp;quot;，我又拉来T老师讨论，最终决定给setting加一些限制。问题讨论到这里，差不多可以做实验验证了。很快搭好了实验环境，熟悉了下代码框架和要魔改的APIs，设计了一下实验流程和baseline，然后开始给自己心理暗示：这还挺容易的。
+于是期间我尝试了一下多线程，一边游泳一边投提前批一边给T老师写项目本子（这个不是自愿的hhh）。7月大概面了10多场，一轮其实就1h以内，但面试后总是想自我放松一段时间。留给实验的时间比我预想的少，而且没有考虑debug时间，得到意想不到的结果之后，看log排错又花了很久，于是在截稿的一周前，就开始熬夜做实验了。
+赶稿：合作的力量 我的draft一直有给T老师看，T老师很忙，说我先写着，后面大家再删。于是我洋洋洒洒写了很多，加上reference刚好能到10页。等我把draft发到群里的之后，Z老师指出了很多问题，ZH师兄说far from ready。这时离截稿只有2~3天了，分给YC师弟的实验最后只做出了阉割版本，于是拉他来画图。在ZH师兄的指导下，YC师弟把第一页的2个图迭代了8个版本（终于看着像模像样了）。
+但最艰难的地方不是图，是行文逻辑。Abstract/Intro/Motivation都需要大改，因为Intro是Abstract的补充，Motivation是Intro的补充。我之前的写法是想到什么写什么。在我补充实验和算法部分写作的时候，ZC师兄帮忙给图排版，教我把推导写成Theorem-Proof，ZH师兄开始从前往后帮我改论文。
+2天时间，ZH师兄变废为宝。重读他改过的部分，感觉自己突然开窍了。朋友评： &amp;ldquo;遇到这种师兄真的难得，代入我自己，我是不会帮谁改代码改到凌晨2点的。&amp;rdquo;
+整个七月，夹杂在迷茫和焦虑之中，这些帮助和指导就是生活中的甜吧。回想从研一到现在，ZH师兄算得上半个导师了，在他的帮助下学到了很多知识和技能。可是对于我们INFP来说，感谢的话太难说出口了，希望师兄能意会🙏。
+收获：&amp;ldquo;能投出去我就很开心满意了&amp;rdquo; 投出这篇论文后，心态突然变好。以前一直有点眼高手低，对自己很少满意，现在觉得能有一个像模像样的版本投出去，就是很大程度的自我肯定了。虽然论文能不能中取决于审稿人，但一段时间的努力是否有价值，完全取决于我们自己。
+debug能力&#43;&#43;，抗压能力&#43;&#43;，写论文有点开窍了，最重要的是，以前没什么主见，遇到问题习惯性求助于人，这个工作做完似乎锻炼出一些独自解决问题的能力。所以投稿前一天我和ZC师兄说：&amp;ldquo;能投出去我就很开心满意了。&amp;rdquo;
+致谢 感谢包括但不限于：
+ZH师兄：朋友口中我读研遇到的贵人，方方面面的导师，对科研执着又沉稳，问的问题他都会，人生标杆式的存在。 ZC师兄：前期用扎实的数学基础和我过Proof，后期耐心地给我讲科研的不确定性。遇坑填坑，一起解决了不少问题。 我的导师T老师：感谢T老师提供的co-authors，title（虽然最后并没用到）以及科研自信（这个狠狠用到！）。 '><title>记录第一次当一作，写论文&#43;投稿期间的心得</title>
+
+<link rel='canonical' href='https://example.com/p/reasearch-summary-0/'>
+
+<link rel="stylesheet" href="/scss/style.min.5a8e892f6fa14515e9065eee1f5d2e05302606ec7f11750b2fb95198f9cdcbfd.css"><meta property='og:title' content='记录第一次当一作，写论文&#43;投稿期间的心得'>
+<meta property='og:description' content='上海-杭州：从idea到第一次集体讨论 这篇文章的时间线拉得特别长，从21年的年底就和ZH师兄确定了大概的方向。实习期间抽下班时间，和上海回合肥的高铁上，断断续续地写完了开题报告。21年12月完成开题答辩之后，再到22年3月，大部分时间都花在实习的项目里。
+2月大致完成了文章setting部分的调研，4月上海疫情爆发，度过了最艰难的一段时光（不愿赘述），那段时间整个人都不太好，挂掉了很重要的面试。
+到5月终于收拾好心情，在集中隔离点码好了理论推导部分，约我的导师T老师和ZH师兄讨论了一下我们的topic是否值得往下做。T老师向来是自信的人，从他口中很少听到否定的答案。他的肯定也给了我一些动力，于是5月底到6月初，开始了一边写论文一边刷题的生活。
+USTC：陷入local optimum 排除万难地回到了学校，这时候draft里还是只有当前setting和proof的部分，而且proof里还有一些数学问题没解决，于是我拉了ZC师兄加入。
+反复讨论了很多次，这期间还去请教了同组本科数学的WJ师兄，重操旧业捡起了MATLAB，还顺便学了下Mathematica（好用，强推！）。但这样长时间的死磕公式，得到的收益往往很有限。经常一整天精疲力尽，回头一看论文进展，还是0。那段时间和ZC师兄讨论，听的最多的词就是&amp;quot;trivial&amp;quot; ———— 这是一个数学工具可解的问题。
+心情差到极点怀疑自己的时候，发现赶8月另一个A会的室友也有几乎相同的烦恼。在食堂天台一起吹吹晚风，一瓶RIO，聊聊科研和人生，成了6月为数不多的快乐回忆。
+实验：再也不敢玩火了 为了让这个问题看着不那么&amp;quot;trivial&amp;quot;，我又拉来T老师讨论，最终决定给setting加一些限制。问题讨论到这里，差不多可以做实验验证了。很快搭好了实验环境，熟悉了下代码框架和要魔改的APIs，设计了一下实验流程和baseline，然后开始给自己心理暗示：这还挺容易的。
+于是期间我尝试了一下多线程，一边游泳一边投提前批一边给T老师写项目本子（这个不是自愿的hhh）。7月大概面了10多场，一轮其实就1h以内，但面试后总是想自我放松一段时间。留给实验的时间比我预想的少，而且没有考虑debug时间，得到意想不到的结果之后，看log排错又花了很久，于是在截稿的一周前，就开始熬夜做实验了。
+赶稿：合作的力量 我的draft一直有给T老师看，T老师很忙，说我先写着，后面大家再删。于是我洋洋洒洒写了很多，加上reference刚好能到10页。等我把draft发到群里的之后，Z老师指出了很多问题，ZH师兄说far from ready。这时离截稿只有2~3天了，分给YC师弟的实验最后只做出了阉割版本，于是拉他来画图。在ZH师兄的指导下，YC师弟把第一页的2个图迭代了8个版本（终于看着像模像样了）。
+但最艰难的地方不是图，是行文逻辑。Abstract/Intro/Motivation都需要大改，因为Intro是Abstract的补充，Motivation是Intro的补充。我之前的写法是想到什么写什么。在我补充实验和算法部分写作的时候，ZC师兄帮忙给图排版，教我把推导写成Theorem-Proof，ZH师兄开始从前往后帮我改论文。
+2天时间，ZH师兄变废为宝。重读他改过的部分，感觉自己突然开窍了。朋友评： &amp;ldquo;遇到这种师兄真的难得，代入我自己，我是不会帮谁改代码改到凌晨2点的。&amp;rdquo;
+整个七月，夹杂在迷茫和焦虑之中，这些帮助和指导就是生活中的甜吧。回想从研一到现在，ZH师兄算得上半个导师了，在他的帮助下学到了很多知识和技能。可是对于我们INFP来说，感谢的话太难说出口了，希望师兄能意会🙏。
+收获：&amp;ldquo;能投出去我就很开心满意了&amp;rdquo; 投出这篇论文后，心态突然变好。以前一直有点眼高手低，对自己很少满意，现在觉得能有一个像模像样的版本投出去，就是很大程度的自我肯定了。虽然论文能不能中取决于审稿人，但一段时间的努力是否有价值，完全取决于我们自己。
+debug能力&#43;&#43;，抗压能力&#43;&#43;，写论文有点开窍了，最重要的是，以前没什么主见，遇到问题习惯性求助于人，这个工作做完似乎锻炼出一些独自解决问题的能力。所以投稿前一天我和ZC师兄说：&amp;ldquo;能投出去我就很开心满意了。&amp;rdquo;
+致谢 感谢包括但不限于：
+ZH师兄：朋友口中我读研遇到的贵人，方方面面的导师，对科研执着又沉稳，问的问题他都会，人生标杆式的存在。 ZC师兄：前期用扎实的数学基础和我过Proof，后期耐心地给我讲科研的不确定性。遇坑填坑，一起解决了不少问题。 我的导师T老师：感谢T老师提供的co-authors，title（虽然最后并没用到）以及科研自信（这个狠狠用到！）。 '>
+<meta property='og:url' content='https://example.com/p/reasearch-summary-0/'>
+<meta property='og:site_name' content='cat-mia'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-08-21T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2022-08-21T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="记录第一次当一作，写论文&#43;投稿期间的心得">
+<meta name="twitter:description" content="上海-杭州：从idea到第一次集体讨论 这篇文章的时间线拉得特别长，从21年的年底就和ZH师兄确定了大概的方向。实习期间抽下班时间，和上海回合肥的高铁上，断断续续地写完了开题报告。21年12月完成开题答辩之后，再到22年3月，大部分时间都花在实习的项目里。
+2月大致完成了文章setting部分的调研，4月上海疫情爆发，度过了最艰难的一段时光（不愿赘述），那段时间整个人都不太好，挂掉了很重要的面试。
+到5月终于收拾好心情，在集中隔离点码好了理论推导部分，约我的导师T老师和ZH师兄讨论了一下我们的topic是否值得往下做。T老师向来是自信的人，从他口中很少听到否定的答案。他的肯定也给了我一些动力，于是5月底到6月初，开始了一边写论文一边刷题的生活。
+USTC：陷入local optimum 排除万难地回到了学校，这时候draft里还是只有当前setting和proof的部分，而且proof里还有一些数学问题没解决，于是我拉了ZC师兄加入。
+反复讨论了很多次，这期间还去请教了同组本科数学的WJ师兄，重操旧业捡起了MATLAB，还顺便学了下Mathematica（好用，强推！）。但这样长时间的死磕公式，得到的收益往往很有限。经常一整天精疲力尽，回头一看论文进展，还是0。那段时间和ZC师兄讨论，听的最多的词就是&amp;quot;trivial&amp;quot; ———— 这是一个数学工具可解的问题。
+心情差到极点怀疑自己的时候，发现赶8月另一个A会的室友也有几乎相同的烦恼。在食堂天台一起吹吹晚风，一瓶RIO，聊聊科研和人生，成了6月为数不多的快乐回忆。
+实验：再也不敢玩火了 为了让这个问题看着不那么&amp;quot;trivial&amp;quot;，我又拉来T老师讨论，最终决定给setting加一些限制。问题讨论到这里，差不多可以做实验验证了。很快搭好了实验环境，熟悉了下代码框架和要魔改的APIs，设计了一下实验流程和baseline，然后开始给自己心理暗示：这还挺容易的。
+于是期间我尝试了一下多线程，一边游泳一边投提前批一边给T老师写项目本子（这个不是自愿的hhh）。7月大概面了10多场，一轮其实就1h以内，但面试后总是想自我放松一段时间。留给实验的时间比我预想的少，而且没有考虑debug时间，得到意想不到的结果之后，看log排错又花了很久，于是在截稿的一周前，就开始熬夜做实验了。
+赶稿：合作的力量 我的draft一直有给T老师看，T老师很忙，说我先写着，后面大家再删。于是我洋洋洒洒写了很多，加上reference刚好能到10页。等我把draft发到群里的之后，Z老师指出了很多问题，ZH师兄说far from ready。这时离截稿只有2~3天了，分给YC师弟的实验最后只做出了阉割版本，于是拉他来画图。在ZH师兄的指导下，YC师弟把第一页的2个图迭代了8个版本（终于看着像模像样了）。
+但最艰难的地方不是图，是行文逻辑。Abstract/Intro/Motivation都需要大改，因为Intro是Abstract的补充，Motivation是Intro的补充。我之前的写法是想到什么写什么。在我补充实验和算法部分写作的时候，ZC师兄帮忙给图排版，教我把推导写成Theorem-Proof，ZH师兄开始从前往后帮我改论文。
+2天时间，ZH师兄变废为宝。重读他改过的部分，感觉自己突然开窍了。朋友评： &amp;ldquo;遇到这种师兄真的难得，代入我自己，我是不会帮谁改代码改到凌晨2点的。&amp;rdquo;
+整个七月，夹杂在迷茫和焦虑之中，这些帮助和指导就是生活中的甜吧。回想从研一到现在，ZH师兄算得上半个导师了，在他的帮助下学到了很多知识和技能。可是对于我们INFP来说，感谢的话太难说出口了，希望师兄能意会🙏。
+收获：&amp;ldquo;能投出去我就很开心满意了&amp;rdquo; 投出这篇论文后，心态突然变好。以前一直有点眼高手低，对自己很少满意，现在觉得能有一个像模像样的版本投出去，就是很大程度的自我肯定了。虽然论文能不能中取决于审稿人，但一段时间的努力是否有价值，完全取决于我们自己。
+debug能力&#43;&#43;，抗压能力&#43;&#43;，写论文有点开窍了，最重要的是，以前没什么主见，遇到问题习惯性求助于人，这个工作做完似乎锻炼出一些独自解决问题的能力。所以投稿前一天我和ZC师兄说：&amp;ldquo;能投出去我就很开心满意了。&amp;rdquo;
+致谢 感谢包括但不限于：
+ZH师兄：朋友口中我读研遇到的贵人，方方面面的导师，对科研执着又沉稳，问的问题他都会，人生标杆式的存在。 ZC师兄：前期用扎实的数学基础和我过Proof，后期耐心地给我讲科研的不确定性。遇坑填坑，一起解决了不少问题。 我的导师T老师：感谢T老师提供的co-authors，title（虽然最后并没用到）以及科研自信（这个狠狠用到！）。 ">
+    <link rel="shortcut icon" href="icons/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu099caa89cd3a3d8f32f07d578e3b630a_369072_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🐰</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">cat-mia</a></h1>
+            <h2 class="site-description">且视他人之疑目如盏盏鬼火，大胆地去走你的夜路。</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        target="_blank"
+                        title="GitHub"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li  class='current' >
+            <a href='/post/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/research/" >
+                Research
+            </a>
+        
+            <a href="/categories/%E5%A4%8D%E7%9B%98/" >
+                复盘
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/reasearch-summary-0/">记录第一次当一作，写论文&#43;投稿期间的心得</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Aug 21, 2022</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="上海-杭州从idea到第一次集体讨论">上海-杭州：从idea到第一次集体讨论</h2>
+<p>这篇文章的时间线拉得特别长，从21年的年底就和ZH师兄确定了大概的方向。实习期间抽下班时间，和上海回合肥的高铁上，断断续续地写完了开题报告。21年12月完成开题答辩之后，再到22年3月，大部分时间都花在实习的项目里。</p>
+<p>2月大致完成了文章setting部分的调研，4月上海疫情爆发，度过了最艰难的一段时光（不愿赘述），那段时间整个人都不太好，挂掉了很重要的面试。</p>
+<p>到5月终于收拾好心情，在集中隔离点码好了理论推导部分，约我的导师T老师和ZH师兄讨论了一下我们的topic是否值得往下做。T老师向来是自信的人，从他口中很少听到否定的答案。他的肯定也给了我一些动力，于是5月底到6月初，开始了一边写论文一边刷题的生活。</p>
+<h2 id="ustc陷入local-optimum">USTC：陷入local optimum</h2>
+<p>排除万难地回到了学校，这时候draft里还是只有当前setting和proof的部分，而且proof里还有一些数学问题没解决，于是我拉了ZC师兄加入。</p>
+<p>反复讨论了很多次，这期间还去请教了同组本科数学的WJ师兄，重操旧业捡起了MATLAB，还顺便学了下Mathematica（好用，强推！）。但这样长时间的死磕公式，得到的收益往往很有限。经常一整天精疲力尽，回头一看论文进展，还是0。那段时间和ZC师兄讨论，听的最多的词就是&quot;trivial&quot; ———— 这是一个数学工具可解的问题。</p>
+<p>心情差到极点怀疑自己的时候，发现赶8月另一个A会的室友也有几乎相同的烦恼。在食堂天台一起吹吹晚风，一瓶RIO，聊聊科研和人生，成了6月为数不多的快乐回忆。</p>
+<h2 id="实验再也不敢玩火了">实验：再也不敢玩火了</h2>
+<p>为了让这个问题看着不那么&quot;trivial&quot;，我又拉来T老师讨论，最终决定给setting加一些限制。问题讨论到这里，差不多可以做实验验证了。很快搭好了实验环境，熟悉了下代码框架和要魔改的APIs，设计了一下实验流程和baseline，然后开始给自己心理暗示：这还挺容易的。</p>
+<p>于是期间我尝试了一下多线程，一边游泳一边投提前批一边给T老师写项目本子（这个不是自愿的hhh）。7月大概面了10多场，一轮其实就1h以内，但面试后总是想自我放松一段时间。留给实验的时间比我预想的少，而且没有考虑debug时间，得到意想不到的结果之后，看log排错又花了很久，于是在截稿的一周前，就开始熬夜做实验了。</p>
+<h2 id="赶稿合作的力量">赶稿：合作的力量</h2>
+<p>我的draft一直有给T老师看，T老师很忙，说我先写着，后面大家再删。于是我洋洋洒洒写了很多，加上reference刚好能到10页。等我把draft发到群里的之后，Z老师指出了很多问题，ZH师兄说far from ready。这时离截稿只有2~3天了，分给YC师弟的实验最后只做出了阉割版本，于是拉他来画图。在ZH师兄的指导下，YC师弟把第一页的2个图迭代了8个版本（终于看着像模像样了）。</p>
+<p>但最艰难的地方不是图，是行文逻辑。Abstract/Intro/Motivation都需要大改，因为Intro是Abstract的补充，Motivation是Intro的补充。我之前的写法是想到什么写什么。在我补充实验和算法部分写作的时候，ZC师兄帮忙给图排版，教我把推导写成Theorem-Proof，ZH师兄开始从前往后帮我改论文。</p>
+<p>2天时间，ZH师兄变废为宝。重读他改过的部分，感觉自己突然开窍了。朋友评：
+&ldquo;遇到这种师兄真的难得，代入我自己，我是不会帮谁改代码改到凌晨2点的。&rdquo;</p>
+<p>整个七月，夹杂在迷茫和焦虑之中，这些帮助和指导就是生活中的甜吧。回想从研一到现在，ZH师兄算得上半个导师了，在他的帮助下学到了很多知识和技能。可是对于我们INFP来说，感谢的话太难说出口了，希望师兄能意会🙏。</p>
+<h2 id="收获能投出去我就很开心满意了">收获：&ldquo;能投出去我就很开心满意了&rdquo;</h2>
+<p>投出这篇论文后，心态突然变好。以前一直有点眼高手低，对自己很少满意，现在觉得能有一个像模像样的版本投出去，就是很大程度的自我肯定了。虽然论文能不能中取决于审稿人，但一段时间的努力是否有价值，完全取决于我们自己。</p>
+<p>debug能力++，抗压能力++，写论文有点开窍了，最重要的是，以前没什么主见，遇到问题习惯性求助于人，这个工作做完似乎锻炼出一些独自解决问题的能力。所以投稿前一天我和ZC师兄说：&ldquo;能投出去我就很开心满意了。&rdquo;</p>
+<h2 id="致谢">致谢</h2>
+<p>感谢包括但不限于：</p>
+<blockquote>
+<ul>
+<li>ZH师兄：朋友口中我读研遇到的贵人，方方面面的导师，对科研执着又沉稳，问的问题他都会，人生标杆式的存在。</li>
+<li>ZC师兄：前期用扎实的数学基础和我过Proof，后期耐心地给我讲科研的不确定性。遇坑填坑，一起解决了不少问题。</li>
+<li>我的导师T老师：感谢T老师提供的co-authors，title（虽然最后并没用到）以及科研自信（这个狠狠用到！）。</li>
+</ul>
+</blockquote>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2022 cat-mia
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.13.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#上海-杭州从idea到第一次集体讨论">上海-杭州：从idea到第一次集体讨论</a></li>
+    <li><a href="#ustc陷入local-optimum">USTC：陷入local optimum</a></li>
+    <li><a href="#实验再也不敢玩火了">实验：再也不敢玩火了</a></li>
+    <li><a href="#赶稿合作的力量">赶稿：合作的力量</a></li>
+    <li><a href="#收获能投出去我就很开心满意了">收获：&ldquo;能投出去我就很开心满意了&rdquo;</a></li>
+    <li><a href="#致谢">致谢</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
