@@ -2,35 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/post/</loc>
+    <loc>http://cat-mia.github.io/post/</loc>
     <lastmod>2022-08-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/</loc>
+    <loc>http://cat-mia.github.io/</loc>
     <lastmod>2022-08-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/</loc>
+    <loc>http://cat-mia.github.io/categories/</loc>
     <lastmod>2022-08-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/research/</loc>
+    <loc>http://cat-mia.github.io/categories/research/</loc>
     <lastmod>2022-08-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/categories/%E5%A4%8D%E7%9B%98/</loc>
+    <loc>http://cat-mia.github.io/categories/%E5%A4%8D%E7%9B%98/</loc>
     <lastmod>2022-08-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/p/reasearch-summary-0/</loc>
+    <loc>http://cat-mia.github.io/p/reasearch-summary-0/</loc>
     <lastmod>2022-08-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/about/</loc>
+    <loc>http://cat-mia.github.io/about/</loc>
     <lastmod>2022-08-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/page/</loc>
+    <loc>http://cat-mia.github.io/page/</loc>
     <lastmod>2022-08-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/archives/</loc>
+    <loc>http://cat-mia.github.io/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/search/</loc>
+    <loc>http://cat-mia.github.io/search/</loc>
   </url><url>
-    <loc>https://example.com/tags/</loc>
+    <loc>http://cat-mia.github.io/tags/</loc>
   </url>
 </urlset>
