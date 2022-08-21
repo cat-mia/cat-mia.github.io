@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>cat-mia</title>
-        <link>http://cat-mia.github.io/</link>
+        <link>https://example.com/</link>
         <description>Recent content on cat-mia</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 21 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://cat-mia.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 21 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>记录第一次当一作，写论文&#43;投稿期间的心得</title>
-        <link>http://cat-mia.github.io/p/reasearch-summary-0/</link>
+        <link>https://example.com/p/reasearch-summary-0/</link>
         <pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate>
         
-        <guid>http://cat-mia.github.io/p/reasearch-summary-0/</guid>
+        <guid>https://example.com/p/reasearch-summary-0/</guid>
         <description>&lt;h2 id=&#34;上海-杭州从idea到第一次集体讨论&#34;&gt;上海-杭州：从idea到第一次集体讨论&lt;/h2&gt;
 &lt;p&gt;这篇文章的时间线拉得特别长，从21年的年底就和ZH师兄确定了大概的方向。实习期间抽下班时间，和上海回合肥的高铁上，断断续续地写完了开题报告。21年12月完成开题答辩之后，再到22年3月，大部分时间都花在实习的项目里。&lt;/p&gt;
 &lt;p&gt;2月大致完成了文章setting部分的调研，4月上海疫情爆发，度过了最艰难的一段时光（不愿赘述），那段时间整个人都不太好，挂掉了很重要的面试。&lt;/p&gt;
@@ -24,7 +24,7 @@
 &lt;p&gt;为了让这个问题看着不那么&amp;quot;trivial&amp;quot;，我又拉来T老师讨论，最终决定给setting加一些限制。问题讨论到这里，差不多可以做实验验证了。很快搭好了实验环境，熟悉了下代码框架和要魔改的APIs，设计了一下实验流程和baseline，然后开始给自己心理暗示：这还挺容易的。&lt;/p&gt;
 &lt;p&gt;于是期间我尝试了一下多线程，一边游泳一边投提前批一边给T老师写项目本子（这个不是自愿的hhh）。7月大概面了10多场，一轮其实就1h以内，但面试后总是想自我放松一段时间。留给实验的时间比我预想的少，而且没有考虑debug时间，得到意想不到的结果之后，看log排错又花了很久，于是在截稿的一周前，就开始熬夜做实验了。&lt;/p&gt;
 &lt;h2 id=&#34;赶稿合作的力量&#34;&gt;赶稿：合作的力量&lt;/h2&gt;
-&lt;p&gt;我的draft一直有给T老师看，T老师很忙，说我先写着，后面大家再删。于是我洋洋洒洒写了很多，加上reference刚好能到10页。等我把draft发到群里的之后，Z老师指出了很多问题，ZH师兄说far from ready。这时离截稿只有2~3天了，分给YC师弟的实验最后只做出了阉割版本，于是拉他来画图。在ZH师兄的指导下，YC师弟把第一页的2个图迭代了8个版本（终于看着像模像样了）。&lt;/p&gt;
+&lt;p&gt;我的draft一直有给T老师看，T老师很忙，说我先写着，后面大家再删。于是我洋洋洒洒写了很多，加上reference刚好能到10页。等我把draft发到群里之后，Z老师指出了很多问题，ZH师兄说far from ready。这时离截稿只有2~3天了，分给YC师弟的实验最后只做出了阉割版本，于是拉他来画图。在ZH师兄的指导下，YC师弟把第一页的2个图迭代了8个版本（终于看着像模像样了）。&lt;/p&gt;
 &lt;p&gt;但最艰难的地方不是图，是行文逻辑。Abstract/Intro/Motivation都需要大改，因为Intro是Abstract的补充，Motivation是Intro的补充。我之前的写法是想到什么写什么。在我补充实验和算法部分写作的时候，ZC师兄帮忙给图排版，教我把推导写成Theorem-Proof，ZH师兄开始从前往后帮我改论文。&lt;/p&gt;
 &lt;p&gt;2天时间，ZH师兄变废为宝。重读他改过的部分，感觉自己突然开窍了。朋友评：
 &amp;ldquo;遇到这种师兄真的难得，代入我自己，我是不会帮谁改代码改到凌晨2点的。&amp;rdquo;&lt;/p&gt;
@@ -45,10 +45,10 @@
         </item>
         <item>
         <title>About</title>
-        <link>http://cat-mia.github.io/about/</link>
+        <link>https://example.com/about/</link>
         <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
         
-        <guid>http://cat-mia.github.io/about/</guid>
+        <guid>https://example.com/about/</guid>
         <description>&lt;p&gt;INFP中的outlier，努力成为独立勇敢热情坚定的人。&lt;/p&gt;
 &lt;h3 id=&#34;不被定义&#34;&gt;不被定义&lt;/h3&gt;
 &lt;p&gt;Girls can do anything.
@@ -65,18 +65,18 @@
         </item>
         <item>
         <title>Archives</title>
-        <link>http://cat-mia.github.io/archives/</link>
+        <link>https://example.com/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://cat-mia.github.io/archives/</guid>
+        <guid>https://example.com/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>Search</title>
-        <link>http://cat-mia.github.io/search/</link>
+        <link>https://example.com/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://cat-mia.github.io/search/</guid>
+        <guid>https://example.com/search/</guid>
         <description></description>
         </item>
         
