@@ -2,55 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://cat-mia.github.io/categories/</loc>
+    <loc>https://example.com/</loc>
+    <lastmod>2022-08-21T14:38:37+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://cat-mia.github.io/zh-cn/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="http://cat-mia.github.io/ar/categories/"
+                href="https://example.com/zh-cn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://cat-mia.github.io/categories/"
+                href="https://example.com/"
                 />
   </url><url>
-    <loc>http://cat-mia.github.io/</loc>
+    <loc>https://example.com/p/first/</loc>
+    <lastmod>2022-08-21T14:38:37+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/post/</loc>
+    <lastmod>2022-08-21T14:38:37+08:00</lastmod>
+  </url><url>
+    <loc>https://example.com/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://cat-mia.github.io/zh-cn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="http://cat-mia.github.io/ar/"
+                href="https://example.com/zh-cn/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://cat-mia.github.io/"
+                href="https://example.com/categories/"
                 />
   </url><url>
-    <loc>http://cat-mia.github.io/tags/</loc>
+    <loc>https://example.com/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://cat-mia.github.io/zh-cn/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="http://cat-mia.github.io/ar/tags/"
+                href="https://example.com/zh-cn/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://cat-mia.github.io/tags/"
+                href="https://example.com/tags/"
                 />
   </url>
 </urlset>
