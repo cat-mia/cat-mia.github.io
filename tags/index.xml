@@ -5,6 +5,15 @@
         <link>https://cat-mia.github.io/tags/</link>
         <description>Recent content in Tags on cat-mia</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="https://cat-mia.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+        <language>en-us</language>
+        <lastBuildDate>Tue, 23 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cat-mia.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>复盘</title>
+        <link>https://cat-mia.github.io/tags/%E5%A4%8D%E7%9B%98/</link>
+        <pubDate>Tue, 23 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://cat-mia.github.io/tags/%E5%A4%8D%E7%9B%98/</guid>
+        <description></description>
+        </item>
+        
     </channel>
 </rss>
