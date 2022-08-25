@@ -6,7 +6,82 @@
         <description>Recent content on cat-mia</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 24 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cat-mia.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 25 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://cat-mia.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>C&#43;&#43;内存泄露 &amp; 智能指针</title>
+        <link>https://cat-mia.github.io/p/cplusplus-1/</link>
+        <pubDate>Thu, 25 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://cat-mia.github.io/p/cplusplus-1/</guid>
+        <description>&lt;h2 id=&#34;内存泄漏&#34;&gt;内存泄漏&lt;/h2&gt;
+&lt;h3 id=&#34;内存泄漏是&#34;&gt;内存泄漏是？&lt;/h3&gt;
+&lt;p&gt;From Wikipedia:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Memory leak is a type of resource leak that occurs when a computer program incorrectly manages memory allocations in a way that
+&lt;strong&gt;memory which is no longer needed is not released&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;什么时候发生&#34;&gt;什么时候发生？&lt;/h3&gt;
+&lt;p&gt;一般发生在堆&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用malloc，new分配内存时没用free，delete。&lt;/li&gt;
+&lt;li&gt;指针重新赋值，导致原本指向的内存空间无法找到。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;怎么防止&#34;&gt;怎么防止？&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;减少手动分配内存，使用智能指针&lt;/li&gt;
+&lt;li&gt;用std::string，不要用char* 。string封装了所有内存管理。&lt;/li&gt;
+&lt;li&gt;将内存的分配和释放封装到类的构造和析构函数中。&lt;/li&gt;
+&lt;li&gt;new之后记得delete。&lt;/li&gt;
+&lt;li&gt;使用检测工具。search: memory leak detection tool&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;野指针wild-pointer&#34;&gt;野指针（wild pointer）&lt;/h3&gt;
+&lt;p&gt;未初始化的指针。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;// p is a wild pointer
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;悬空指针dangling-pointer&#34;&gt;悬空指针（dangling pointer）&lt;/h3&gt;
+&lt;p&gt;指针指向的内存资源已经被释放，但指针并没有改变指向，且后续还在使用。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;malloc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;sizeof&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// normal pointer
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;free&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ptr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// p is a dangling pointer
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// prints garbage value
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;避免&#34;&gt;避免&lt;/h4&gt;
+&lt;p&gt;初始化指针时和释放指针指向内存空间时都要置为NULL。&lt;/p&gt;
+&lt;h2 id=&#34;智能指针&#34;&gt;智能指针&lt;/h2&gt;
+&lt;p&gt;智能指针的出现是为了解决内存泄漏、多次释放同一块内存、野指针等情况。&lt;/p&gt;
+&lt;p&gt;C++11中封装在memory头文件。&lt;code&gt;#include &amp;lt;memory&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;auto_ptr已经被C++11启用。C++11支持的智能指针包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;shared_ptr：资源被多个指针共享，有计数机制。当共享者为0时，自动释放资源。&lt;/li&gt;
+&lt;li&gt;unique_ptr：资源只能被独享，无法进行复制构造，无法进行复制赋值操作。即无法使两个unique_ptr指向同一个对象。但是可以进行移动构造和移动赋值操作。&lt;/li&gt;
+&lt;li&gt;weak_ptr：用来解决shared_ptr相互引用时的死锁问题，不会增加对象的引用计数，和shared_ptr之间可以相互转化。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Memory_leak&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://en.wikipedia.org/wiki/Memory_leak&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.geeksforgeeks.org/memory-leak-in-c-and-how-to-avoid-it/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.geeksforgeeks.org/memory-leak-in-c-and-how-to-avoid-it/&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://c.biancheng.net/view/7898.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://c.biancheng.net/view/7898.html&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>C&#43;&#43;编译内存相关</title>
         <link>https://cat-mia.github.io/p/cplusplus-0/</link>
         <pubDate>Wed, 24 Aug 2022 00:00:00 +0000</pubDate>
