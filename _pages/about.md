@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-My current research interests are **financial AI agents** utilizing a **multi-agent system**, **user-friendly LLM platforms**, and the dynamic optimization of **agents for industrial applications**.
+My current research interests are **financial AI agents** utilizing a **multi-agent system**, agent simulation and optimization, and **knowledge graph** generation for industrial AI agents.
 
 I'm currenty a SDE, International Risk Management, [AntGroup](https://www.antgroup.com/en). Our group responsibility is to build AI-enhanced financial risk control systems.
 
