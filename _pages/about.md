@@ -12,7 +12,7 @@ My current research interests are **financial AI agents** utilizing a **multi-ag
 
 I'm currenty a SDE, International Risk Management, [AntGroup](https://www.antgroup.com/en). Our group responsibility is to build AI-enhanced financial risk control systems.
 
-I received my bachelor’s degree in Computer Science from [University of Electronic Science and Technology of China(UESTC)](https://en.uestc.edu.cn/) as an Outstanding Graduate and my final year project won the Excellent Thesis Award (Thesis).
+I received my bachelor’s degree in Computer Science from [University of Electronic Science and Technology of China(UESTC)](https://en.uestc.edu.cn/) as an Outstanding Graduate and my final year project won the Excellent Thesis Award (Top 1%).
 
 Then I received my master's degree in Computer Science from [University of Electronic Science and Technology of China(USTC)](https://en.ustc.edu.cn/) under the supervision of [Prof. Haisheng Tan](http://staff.ustc.edu.cn/~hstan/home.html), who helped me build strong confidence in both my research and my overall life.
 
